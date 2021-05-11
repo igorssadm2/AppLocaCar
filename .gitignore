@@ -1,0 +1,21 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/src/AppLocaCar/.vs/AppLocaCar/v16
+/src/AppLocaCar/AppLocaCar.Application/bin/Debug/net5.0
+/src/AppLocaCar/AppLocaCar.Application/obj
+/src/AppLocaCar/AppLocaCar.Domain/bin/Debug/net5.0
+/src/AppLocaCar/AppLocaCar.Domain/obj/Debug/net5.0/ref/AppLocaCar.Domain.dll
+/src/AppLocaCar/AppLocaCar.Domain/obj
+/src/AppLocaCar/AppLocaCar.Infra/obj/Debug/net5.0
+/src/AppLocaCar/AppLocaCar.Infra/obj
+/src/AppLocaCar/AppLocaCar.Infra.Data/bin/Debug/net5.0
+/src/AppLocaCar/AppLocaCar.Infra.Data/obj/Debug/net5.0
+/src/AppLocaCar/AppLocaCar.Infra.Data/obj
+/src/AppLocaCar/AppLocaCar.Infra.IoC/bin/Debug/net5.0
+/src/AppLocaCar/AppLocaCar.Infra.IoC/obj
+/src/AppLocaCar/AppLocaCar.MVC/obj
+/src/AppLocaCar/AppLocaCar.UI.MVC/bin/Debug/net5.0
+/src/AppLocaCar/AppLocaCar.UI.MVC/obj
+/src/AppLocaCar/AppLocaCar.Infra.Data/Migrations
