@@ -1,5 +1,4 @@
-using AppLocaCar.Infra.Data;
-using AppLocaCar.Infra.Data.Context;
+using AppLocaCar.Infra.IoC;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
