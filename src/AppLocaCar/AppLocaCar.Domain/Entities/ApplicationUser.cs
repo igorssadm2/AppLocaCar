@@ -25,6 +25,8 @@ namespace AppLocaCar.Domain.Entities
         public virtual ICollection<IdentityUserRole<string>> Roles { get; set; }
 
         public virtual ICollection<Order> Orders { get; set; }
+        //o ideal é separar a entidade de usuario das demais personas da aplicação
+        public virtual ICollection<Address> Address { get; set; }
 
 
     }

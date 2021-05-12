@@ -21,7 +21,7 @@ namespace AppLocaCar.Infra.Data.EntityConfigurations
             HasForeignKey(k => k.ApplicationUserId);
 
 
-            builder.HasMany(x => x.Orders).
+            builder.HasMany(x => x.Address).
             WithOne(x => x.User).
             HasForeignKey(k => k.ApplicationUserId);
         }

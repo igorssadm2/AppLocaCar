@@ -10,12 +10,12 @@ using System.Threading.Tasks;
 
 namespace AppLocaCar.Infra.Data.EntityConfigurations
 {
-    public class AdressConfiguration : IEntityTypeConfiguration<Adress>
+    public class AddressConfiguration : IEntityTypeConfiguration<Address>
     {
-        public void Configure(EntityTypeBuilder<Adress> builder)
+        public void Configure(EntityTypeBuilder<Address> builder)
         {
             builder.HasKey(p => p.EnderecoId);
-            builder.HasKey(p => p.EnderecoId);
+            builder.Property(p => p.ApplicationUserId).HasMaxLength(100).IsRequired();
             builder.Property(p => p.City).HasMaxLength(100).IsRequired();
             builder.Property(p => p.Alias).HasMaxLength(100).IsRequired();
             builder.Property(p => p.CEP).HasMaxLength(9).IsRequired();

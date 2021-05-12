@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace AppLocaCar.Domain.Entities
 {
-    public class Adress
+    public class Address
     {
 
         public int EnderecoId { get; set; }
-        public string UserId { get; set; }
-        public virtual ApplicationUser Cliente { get; set; }
+        public string ApplicationUserId { get; set; }
+        public virtual ApplicationUser User { get; set; }
+
         public string Alias { get; set; }
         public string CEP { get; set; }
         public string PublicPlace { get; set; }

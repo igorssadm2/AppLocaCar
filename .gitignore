@@ -24,3 +24,5 @@
 /src/AppLocaCar/AppLocaCar.Tests/obj
 /src/AppLocaCar/AppLocaCar.UI.MVC/Usuarios.db-shm
 *.db-wal
+/src/AppLocaCar/AppLocaCar.Helpers/bin/Debug/net5.0
+/src/AppLocaCar/AppLocaCar.Tests/bin/Debug/net5.0
