@@ -26,3 +26,4 @@
 *.db-wal
 /src/AppLocaCar/AppLocaCar.Helpers/bin/Debug/net5.0
 /src/AppLocaCar/AppLocaCar.Tests/bin/Debug/net5.0
+/src/AppLocaCar/.vs/AppLocaCar

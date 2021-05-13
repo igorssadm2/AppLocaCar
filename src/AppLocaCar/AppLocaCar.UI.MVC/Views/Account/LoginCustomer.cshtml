@@ -1,0 +1,35 @@
+﻿@model AppLocaCar.Application.Dto.User.UserLoginViewModel
+@{
+    ViewData["Title"] = "LoginCustomer";
+}
+
+<center>
+    <h1>@ViewData["Title"]</h1>
+    <div class="col-md-8 rounded table-bordered">
+        <section>
+            <form id="account"  method="post">
+                <hr />
+                <div asp-validation-summary="All" class="text-danger"></div>
+                <div class="form-group">
+                    <i class="fas fa-at"></i> <label asp-for="Email"></label>
+                    <input asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <i class="fas fa-key"></i> <label asp-for="Pass"></label>
+                    <input asp-for="Pass" class="form-control" />
+                    <span asp-validation-for="Pass" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-warning">Log in</button>
+                </div>
+                <div class="form-group">
+                    <p>
+                        <a asp-page="/Register"  class="mb-2" style="color:white">Register as a new user</a>
+                    </p>
+                </div>
+            </form>
+        </section>
+    </div>
+</center>
+

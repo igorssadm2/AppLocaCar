@@ -13,9 +13,9 @@ namespace AppLocaCar.Domain.Entities
             this.Orders = new HashSet<Order>();
         }
 
-        public string FirstName { get; set; }
+        public string Name { get; set; }
+        public string CodeEmployee { get; set; }
 
-        public string LastName { get; set; }
         public DateTime CreatedOn { get; set; }
 
         public DateTime? ModifiedOn { get; set; }

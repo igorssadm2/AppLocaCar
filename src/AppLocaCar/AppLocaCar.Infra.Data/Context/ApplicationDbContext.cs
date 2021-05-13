@@ -18,17 +18,11 @@ namespace AppLocaCar.Infra.Data.Context
         {
         }
         public DbSet<ApplicationUser> Users { get; set; }
+        public DbSet<Address> Adress { get; set; }
         public DbSet<Location> Locations { get; set; }
         public DbSet<Car> Cars { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<CarRentDays> CarRentDays { get; set; }
-
-
-        ////https://docs.microsoft.com/pt-br/dotnet/api/microsoft.entityframeworkcore.dbcontext.savechangesasync?view=efcore-5.0
-        ////Salva todas as alterações feitas neste contexto no banco de dados.
-        //public override int SaveChanges() => this.SaveChanges(true);
-        //public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default) =>
-        //    this.SaveChangesAsync(true, cancellationToken);
 
 
         protected override void OnModelCreating(ModelBuilder builder)
@@ -36,21 +30,12 @@ namespace AppLocaCar.Infra.Data.Context
             base.OnModelCreating(builder);
 
             builder.ApplyConfiguration(new ApplicationUserConfiguration());
+            builder.ApplyConfiguration(new AddressConfiguration());
             builder.ApplyConfiguration(new LocationConfiguration());
             builder.ApplyConfiguration(new CarConfiguration());
             builder.ApplyConfiguration(new OrderConfiguration());
             builder.ApplyConfiguration(new CarRentDaysConfiguration());
 
-
-            //var entityTypes = builder.Model.GetEntityTypes().ToList();
-
-            //// Disable cascade delete
-            //var foreignKeys = entityTypes
-            //.SelectMany(e => e.GetForeignKeys().Where(f => f.DeleteBehavior == DeleteBehavior.Cascade));
-            //foreach (var foreignKey in foreignKeys)
-            //{
-            //    foreignKey.DeleteBehavior = DeleteBehavior.Restrict;
-            //}
         }
     }
 }

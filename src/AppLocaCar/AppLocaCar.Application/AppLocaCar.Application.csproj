@@ -5,8 +5,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Interfaces\Repositories\**" />
+    <EmbeddedResource Remove="Interfaces\Repositories\**" />
+    <None Remove="Interfaces\Repositories\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\AppLocaCar.Domain\AppLocaCar.Domain.csproj" />
     <ProjectReference Include="..\AppLocaCar.Helpers\AppLocaCar.Helpers.csproj" />
+    <ProjectReference Include="..\AppLocaCar.Infra.Data\AppLocaCar.Infra.Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
   </ItemGroup>
 
 </Project>
