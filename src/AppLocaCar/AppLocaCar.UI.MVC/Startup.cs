@@ -1,5 +1,4 @@
-using AppLocaCar.Infra.Data;
-using AppLocaCar.Infra.Data.Context;
+using AppLocaCar.Infra.IoC;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -24,6 +23,7 @@ namespace AppLocaCar.UI.MVC
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddInfrastructureServices();
             services.AddInfrastructure(Configuration);
             services.AddControllersWithViews();
             services.AddRazorPages();

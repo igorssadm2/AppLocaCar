@@ -1,0 +1,113 @@
+﻿
+@model AppLocaCar.Application.Dto.User.UserRegisterViewModel
+
+
+
+<center>
+    <h1>Register</h1>
+    <div class="col-md-8 rounded table-bordered">
+        <form id="account" method="post">
+            <h4>Create a new account.</h4>
+
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-row">
+                <div>Personal data</div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <i class="fas fa-address-card"></i> <label asp-for="Name"></label>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <i class="far fa-address-card"></i> <label asp-for="Cpf"></label>
+                    <input asp-for="Cpf" class="form-control" />
+                    <span asp-validation-for="Cpf" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <i class="far fa-address-card"></i> <label asp-for="BirthDate"></label>
+                    <input asp-for="BirthDate" class="form-control" />
+                    <span asp-validation-for="BirthDate" class="text-danger"></span>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <i class="fas fa-address-card"></i> <label asp-for="Email"></label>
+                    <input asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <i class="fas fa-address-card"></i> <label asp-for="TypeUser"></label>
+                    <input asp-for="TypeUser" class="form-control" />
+                    <span asp-validation-for="TypeUser" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <i class="far fa-address-card"></i> <label asp-for="Pass"></label>
+                    <input asp-for="Pass" class="form-control" />
+                    <span asp-validation-for="Pass" class="text-danger"></span>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <i class="fas fa-address-card"></i> <label asp-for="PassConfirm"></label>
+                    <input asp-for="PassConfirm" class="form-control" />
+                    <span asp-validation-for="PassConfirm" class="text-danger"></span>
+                </div>
+
+            </div>
+
+            <div class="form-row">
+                <div>Address</div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <i class="fas fa-address-card"></i> <label asp-for="Alias"></label>
+                    <input asp-for="Alias" class="form-control" />
+                    <span asp-validation-for="Alias" class="text-danger"></span>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <i class="fas fa-address-card"></i> <label asp-for="CEP"></label>
+                    <input asp-for="CEP" class="form-control" />
+                    <span asp-validation-for="CEP" class="text-danger"></span>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <i class="fas fa-address-card"></i> <label asp-for="PublicPlace"></label>
+                    <input asp-for="PublicPlace" class="form-control" />
+                    <span asp-validation-for="PublicPlace" class="text-danger"></span>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <i class="fas fa-address-card"></i> <label asp-for="Number"></label>
+                    <input asp-for="Number" class="form-control" />
+                    <span asp-validation-for="Number" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <i class="fas fa-address-card"></i> <label asp-for="Complement"></label>
+                    <input asp-for="Complement" class="form-control" />
+                    <span asp-validation-for="Complement" class="text-danger"></span>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <i class="fas fa-address-card"></i> <label asp-for="City"></label>
+                    <input asp-for="City" class="form-control" />
+                    <span asp-validation-for="City" class="text-danger"></span>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <i class="fas fa-address-card"></i> <label asp-for="State"></label>
+                    <input asp-for="State" class="form-control" />
+                    <span asp-validation-for="State" class="text-danger"></span>
+                </div>
+
+            </div>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <i class="far fa-address-card"></i> <label asp-for="CodeEmployee"></label>
+                    <input asp-for="CodeEmployee" class="form-control" />
+                    <span asp-validation-for="CodeEmployee" class="text-danger"></span>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-warning mb-2">Register</button>
+        </form>
+    </div>
+</center>
